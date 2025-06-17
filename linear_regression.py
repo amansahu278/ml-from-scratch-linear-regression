@@ -76,7 +76,7 @@ if __name__ == "__main__":
 
     # NOTE
     # y_test is (n_samples,), y_pred is (n_samples, 1)
-    # y_pred - y_test will be (n_samples, n_samples) due to broadcast, this .squeeze()
+    # y_pred - y_test will be (n_samples, n_samples) due to broadcast, thus .squeeze()
 
 
     mse1 = ((y_closed_pred.squeeze() - y_test) ** 2).mean().item()
